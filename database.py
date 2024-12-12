@@ -7,14 +7,19 @@ def add_task():
 def delete_task():
     view_task()
     print("delete task via name ")
-    task=input("enter a task to delete")
+    task=input("enter a task to delete ")
     tasks.remove(task)
     print(f"{task} removed successfully")
     
     
 
 def update_task():
-    pass
+    view_task()
+    print("update task via index number")
+    task=int(input("enter index number to update task "))
+    update_task=input("enter task to be updated ")
+    tasks[task]=update_task
+    print("task updated successfully")
 
 def view_task():
     for i,j in enumerate(tasks):
