@@ -38,13 +38,13 @@ while(True):
     print("5.Exit")
     choice=int(input("Enter your choice "))
     if choice==1:
-        print(add_task())
+        add_task()
     elif choice==2:
-        print(delete_task())
+        delete_task()
     elif choice==3:
-        print(update_task())
+        update_task()
     elif choice==4:
-        print(view_task())
+        view_task()
     elif choice==5:
         print("You exited from the task manager")
         break
